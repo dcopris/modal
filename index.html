@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Modal Window</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Welcome</h1>
+        <button class="blue_button" id="new_prod">Add New Product</button>
+    </div>
+
+    <div class="modal" id="aform">
+        <div class="modal_content">
+            <div class="modal_header">
+                <h1>Add Product</h1>
+                <h2>Second-hand Car</h2>
+                <h3 class="cat">Automobiles</h3>
+                <a href="#" class="close" id="close_modal">x</a>
+                <div id="notification"></div>
+            </div>
+            <div class="modal_body">
+                <form action="#" method="post" id="add_prod_form" name="prod_form">
+                    <div class="form_section">
+                        <fieldset>
+                            <label for="title">Announcement title*</label>
+                            <input type="text" id="title" name="tit" placeholder="Announcement title" required/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="make">Make*</label>
+                            <select id="make" name="mk" ><option valuclass="inline" e="17200" class="pmak">Mercedes-Benz</option><option value="3500" class="pmak">BMW</option><option value="1900" class="pmak">Audi</option><option value="140">Abarth</option><option value="203">AC</option><option value="375">Acura</option><option value="800">Aixam</option><option value="1100">ALPINA</option><option value="121">Artega</option><option value="1750">Asia Motors</option><option value="1700">Aston Martin</option><option value="1900">Audi</option><option value="2000">Austin</option><option value="1950">Austin Healey</option><option value="3100">Bentley</option><option value="3500">BMW</option><option value="3850">Borgward</option><option value="4025">Brilliance</option><option value="4350">Bugatti</option><option value="4400">Buick</option><option value="4700">Cadillac</option><option value="112">Casalini</option><option value="5300">Caterham</option><option value="83">Chatenet</option><option value="5600">Chevrolet</option><option value="5700">Chrysler</option><option value="5900">Citroën</option><option value="6200">Cobra</option><option value="6325">Corvette</option><option value="6600">Dacia</option><option value="6800">Daewoo</option><option value="7000">Daihatsu</option><option value="7400">DeTomaso</option><option value="7700">Dodge</option><option value="235">DS</option><option value="8600">Ferrari</option><option value="8800">Fiat</option><option value="172">Fisker</option><option value="9000">Ford</option><option value="205">GAC Gonow</option><option value="204">Gemballa</option><option value="9900">GMC</option><option value="122">Grecav</option><option value="186">Hamann</option><option value="10850">Holden</option><option value="11000">Honda</option><option value="11050">Hummer</option><option value="11600">Hyundai</option><option value="11650">Infiniti</option><option value="11900">Isuzu</option><option value="12100">Iveco</option><option value="12400">Jaguar</option><option value="12600">Jeep</option><option value="13200">Kia</option><option value="13450">Königsegg</option><option value="13900">KTM</option><option value="14400">Lada</option><option value="14600">Lamborghini</option><option value="14700">Lancia</option><option value="14800">Land Rover</option><option value="14845">Landwind</option><option value="15200">Lexus</option><option value="15400">Ligier</option><option value="15500">Lincoln</option><option value="15900">Lotus</option><option value="16200">Mahindra</option><option value="16600">Maserati</option><option value="16700">Maybach</option><option value="16800">Mazda</option><option value="137">McLaren</option><option value="17200">Mercedes-Benz</option><option value="17300">MG</option><option value="30011">Microcar</option><option value="17500">MINI</option><option value="17700">Mitsubishi</option><option value="17900">Morgan</option><option value="18700">Nissan</option><option value="18875">NSU</option><option value="18975">Oldsmobile</option><option value="19000">Opel</option><option value="149">Pagani</option><option value="19300">Peugeot</option><option value="19600">Piaggio</option><option value="19800">Plymouth</option><option value="20000">Pontiac</option><option value="20100">Porsche</option><option value="20200">Proton</option><option value="20700">Renault</option><option value="21600">Rolls-Royce</option><option value="21700">Rover</option><option value="125">Ruf</option><option value="21800">Saab</option><option value="22000">Santana</option><option value="22500">Seat</option><option value="22900">Skoda</option><option value="23000">Smart</option><option value="188">speedART</option><option value="100">Spyker</option><option value="23100">Ssangyong</option><option value="23500">Subaru</option><option value="23600">Suzuki</option><option value="23800">Talbot</option><option value="23825">Tata</option><option value="189">TECHART</option><option value="135">Tesla</option><option value="24100">Toyota</option><option value="24200">Trabant</option><option value="24400">Triumph</option><option value="24500">TVR</option><option value="25200">Volkswagen</option><option value="25100">Volvo</option><option value="25300">Wartburg</option><option value="113">Westfield</option><option value="25650">Wiesmann</option><option value="1400">Other</option></select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="year">Year*</label>
+                            <input type="number" max="2016" min="1910" id="year" name="yr" placeholder="Manufacturing Year" required />
+                        </fieldset>
+                        <fieldset>
+                            <label for="year">Mileage*</label>
+                            <input type="text" id="mileage" name="mlg" placeholder="mileage" required />
+                        </fieldset>
+                        <fieldset id="fuel_type">
+                            <label>Fuel type*</label>
+                            <label class="inline" for="diesel">Diesel</label>
+                            <input type="checkbox" id="diesel" name="fuel" value="die"/>
+                            <label class="inline" for="gas">Gas</label>
+                            <input type="checkbox" id="gas" name="fuel"  value="gas"/>
+                            <label class="inline" for="electric">Electric</label>
+                            <input type="checkbox" id="electric" name="fuel"  value="ele"/>
+                            <label class="inline" for="hybrid">Hybrid</label>
+                            <input type="checkbox" id="hybrid" name="fuel"  value="hyb"/>
+                            <label class="inline" for="gpl">GPL</label>
+                            <input type="checkbox" id="gpl" name="fuel"  value="gpl"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="color">Color*</label>
+                            <input type="text" id="color" name="col" placeholder="Color" required />
+                        </fieldset>
+                    </div>
+                    <div class="form_section">
+                        <fieldset>
+                            <label for="damaged" class="inline">Damaged vehicle</label>
+                            <input type="checkbox" id="damaged" name="dmg" />
+                            <div id="damaged_details_wrap">
+                                <label for="damaged_details">Damage details</label>
+                                <textarea id="damaged_details" name="dmg_desc"></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label for="price">Price*</label>
+                            <input type="text" class="half_w" id="price" name="prc" placeholder="Price" required/>
+                            <select id="currency" class="half_w"  name="crc" />
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="USD">USD</option>
+                                <option value="CHF">CHF</option>
+                                <option value="RON">RON</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="description">Description*</label>
+                            <textarea id="description" name="desc"></textarea>
+                        </fieldset>
+                        <img src="" alt="Car Logo not available for this brand" id="logo" />
+                    </div>
+                    <div class="clear"></div>
+                    <fieldset>
+                        <input type="button" value="Save" id="submit_btn"/>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal_footer">
+                <p><small>* Mandatory fields</small></p>
+            </div>
+        </div>
+    </div>
+<script src="js.js"></script>
+</body>
+</html>

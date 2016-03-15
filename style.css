@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: verdana, arial, sans-serif;
+    font-size:13px;
+    color:#3F4C6B;
+    background-color: #F9F7ED;
+}
+
+.wrapper{
+    width:50%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.blue_button{
+    padding:10px;
+    background-color: #4096EE;
+    color:#ffffff;
+    white-space:nowrap;
+    text-decoration: none;
+    border:1px solid #ffffff;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+
+.blue_button:hover{
+    margin: 1px 0 0 1px ;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+}
+
+.modal{
+    display:none;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+}
+
+#damaged_details_wrap{
+    display:none;
+}
+
+.modal_content{
+    width:90vw;
+    max-width:800px;
+    margin:auto;
+    height:auto;
+    max-height:900px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: #EEEEEE;
+    box-shadow: 6px 6px 6px #36393D;
+    border-radius: 15px;
+    padding:5px 25px;
+}
+
+.modal_body{
+    padding:20px 0;
+}
+
+.modal_header{
+    border-bottom:1px solid #cccccc;
+}
+
+.modal_footer{
+    border-top:1px solid #cccccc;
+}
+
+.form_section{
+    float:left;
+    width: 50%;
+    min-width:250px;
+}
+
+#notification{
+
+    color:#ffffff;
+    font-weight: bold;
+    padding:10px;
+    border: 10px;
+}
+
+#notification.red{
+    background-color:#ff0000;
+}
+
+#notification.green{
+    background-color: #2b8420;
+}
+
+
+
+.clear{
+    clear: both;
+}
+
+label{
+    display: block;
+    padding-bottom:8px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+fieldset{
+    border: 0px;
+    padding: 8px 0;
+}
+
+input[type='text'], input[type='number'], select, textarea{
+    width:90%;
+    padding:8px;
+}
+
+input[type='text'].err, input[type='number'].err, select.err, textarea.err, fieldset.err{
+    border:1px solid #ff0000;
+}
+
+input[type='checkbox']{
+    display:inline-block;
+    vertical-align: middle;
+
+}
+
+input[type='text'].half_w , select.half_w{
+    width:44%;
+}
+
+.close{
+    text-decoration: none;
+    color: #111;
+    position: absolute;
+    top: 20px;
+    right: 27px;
+    font-size: 30px;
+}
+
+.close:hover{
+    color:#ffffff;
+}
+
